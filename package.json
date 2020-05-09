@@ -1,22 +1,36 @@
 {
-  "name": "3_proj",
+  "name": "frontend-project-lvl3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production babel src --out-dir dist",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "author": "'me'",
-  "license": "ISC",
-  "files": [
-    "dist"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstantin1998/frontend-project-lvl3.git"
+  },
+  "keywords": [
+    "\"bar\"",
+    "\"foo\""
   ],
+  "author": "konstantin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstantin1998/frontend-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/konstantin1998/frontend-project-lvl3#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.5"
+    "@babel/preset-env": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
