@@ -1,5 +1,3 @@
-const func = () => {
-  console.log('hello world');
-};
+import app from './script';
 
-export default func;
+app();
